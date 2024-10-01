@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+img {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(200, 30, 30);
+}
+
+
+.d-flex {
+    display: flex;
+    align-items: center;
+
+}
+
+
+nav {
+    padding: 15px 20px;
+    top: 0;
+    background-color: black;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 100;
+}
+
+.navbar-left p {
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    margin-bottom: 0px;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar-right img {
+    width: 20px;
+    margin-right: 25px;
+}
+
+.navbar-right img:hover {
+    background-color: rgb(106, 104, 104);
+    /* Change this to any desired color */
+    /* Optional: add this for rounded images */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.navbar-left img {
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-center {
+
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.search-box {
+    width: 95%;
+    align-items: center;
+    display: flex;
+    margin-left: 50px;
+}
+
+.mic-icon {
+
+    margin-left: -135px;
+
+    background-color: rgb(164, 164, 171);
+    border-radius: 50%;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.mic-icon:hover {
+    background-color: rgb(99, 99, 99);
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.search-box input {
+    width: 80%;
+    border-radius: 20px;
+    background-color: black;
+    border: 1px solid rgb(114, 114, 114);
+    height: 40px;
+    padding: 0px 15px;
+    outline: none;
+}
+
+.search-box img {
+    padding: 7px;
+    margin-left: -35px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(164, 164, 171);
+    border-radius: 50%;
+
+
+
+}
+
+.search-box img:hover {
+    background-color: rgb(99, 99, 99);
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.sidebar {
+    width: 15%;
+    height: auto;
+    position: relative;
+    top: 0;
+    padding: 20px 15px;
+    color: rgb(255, 255, 255);
+    z-index: 50;
+    background-color: black
+}
+
+.each-options {
+    margin-top: -15px;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 30px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 18px 10px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+
+}
+
+.each-options img {
+    margin-right: 15px;
+    width: 20px;
+}
+
+.each-options:hover {
+    background-color: rgb(61, 61, 61);
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+
+.card {
+
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    width: 380px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image img {
+    width: 380px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    margin-top: -10px;
+    background-color: #000000;
+
+}
+
+.user-image img {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.card-content-writing h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.card-content-writing h6 {
+    font-size: 14px;
+    color: #a29d9d;
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-content-writing p {
+    font-size: 12px;
+    color: #a29d9d;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-link {
+    font-size: 12px;
+    color: #065fd4;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.card-text {
+    margin-top: -7px;
+}
+
+.content-wrapper {
+    height: auto;
+    width: 100%;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    align-items: flex-start;
+}
+
+.suggestions {
+    gap: 20px;
+    height: auto;
+
+}
+
+.main-container {
+    padding: 10px 40px;
+    margin-top: -10px;
+    background-color: #000;
+}
+
+.suggestions .btn {
+    background-color: #4CAF50;
+    /* Custom color */
+    color: white;
+    /* Text color */
+    height: 30px;
+    border: none;
+    /* Remove default borders */
+    border-radius: 5px;
+    /* Optional: add rounded corners */
+    cursor: pointer;
+    /* Show a pointer on hover */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: smaller;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.suggestions .btn:hover {
+    background-color: #747675;
+    /* Slightly darker on hover */
+}
+
+.suggestions .btn {
+    background-color: #4a4a4a;
+    /* Different primary color */
+
+}
+
+.suggestions .btn-primary:hover {
+    background-color: #007bb5;
+    /* Darker shade on hover */
+}
+
+.arrow-button {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
+.arrow-button:hover {
+    background-color: #4a4a4a;
+    cursor: pointer;
+}
+
+.card-row {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.shorts-card {
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    width: 228px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shorts-card img {
+    width: 228px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.shorts-card-content-writing h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shorts-card-content-writing p {
+    font-size: 12px;
+    color: #a29d9d;
+    margin-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shorts-card:hover {
+    transform: translateY(-5px);
+}
+
+.shorts-card.card-image img {
+    width: 380px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
